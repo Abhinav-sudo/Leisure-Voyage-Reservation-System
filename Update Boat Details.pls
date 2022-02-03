@@ -4,7 +4,7 @@ tot_seats NUMBER(3);
 resv_seats NUMBER(3);
 CURSOR cur IS SELECT * FROM boat_details;
 BEGIN
-INSERT INTO boat_details VALUES('&boat_name',&tot_seatsal_seats,0);
+INSERT INTO boat_details VALUES('&boat_name',&tot_seats,0);
 OPEN cur;
 loop
 FETCH cur INTO boatname,tot_seats,resv_seats;
